@@ -4,7 +4,7 @@
 	"description": "This extension remind you of the next yingyeothon schedule.",
 	"version": "1.0.0",
 	"engines": {
-		"vscode": "^1.60.0"
+		"vscode": "^1.66.0"
 	},
 	"categories": [
 		"Other"
@@ -44,5 +44,8 @@
 	},
 	"dependencies": {
 		"@octokit/rest": "^18.12.0"
+	},
+	"repository": {
+		"url": "https://github.com/SilverJun/yingyeothon-reminder.git"
 	}
 }
