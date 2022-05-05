@@ -1,70 +1,36 @@
-# yingyeothon-reminder README
+# yingyeothon-reminder
 
-This is the README for your extension "yingyeothon-reminder". After writing up a brief description, we recommend including the following sections.
+잉여톤27회 참가작, 잉여톤 알리미 확장입니다. 이 확장은 vscode가 켜질때 다음 잉여톤 또는 지난 잉여톤을 알려줍니다.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![f1](misc/feature1.png)
+Vscode가 startup 될때 우측 하단에 다음 잉여톤 일정을 알려줍니다.
+* _잉여톤 사이트로_ 를 클릭해 해당 회차 잉여톤 사이트(yyt.life)로 이동할 수 있습니다.
+* _다음 잉여톤까지 그만보기_ 를 클릭해 다음 잉여톤 공지가 생길때 까지 이 알림을 무시할 수 있습니다.
 
-For example if there is an image subfolder under your extension project workspace:
+![f2](misc/Animation1.gif)
+커맨드 팔레트 (Ctrl + Shift + P) 를 사용해 ```YYT: Check Next YingYeoThon``` 입력하면 잉여톤 일정 노티를 띄울 수 있습니다.
 
-\!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+VSCode: ^1.60 (그렇다고 해서 최신 기능들을 다 사용하진 않음)
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+없음.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+코드가 개판임.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+첫 릴리즈 빌드. 아래와 같은 기능들이 구현됨.
+* startup때 잉여톤 노티
+* 커맨드로 잉여톤 노티
+* 다음 잉여톤까지 노티하지 않기
+* 해당 회차 잉여톤 웹사이트로 이동
