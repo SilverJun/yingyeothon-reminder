@@ -10,15 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:yingyeothon-reminder.helloWorld",
 		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "yingyeothon-reminder.helloWorld",
-				"title": "Hello World"
+				"command": "yingyeothon-reminder.checkYYT",
+				"title": "YYT: Check Next YingYeoThon"
 			}
 		]
 	},
