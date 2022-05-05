@@ -2,7 +2,7 @@
 	"name": "yingyeothon-reminder",
 	"displayName": "yingyeothon-reminder",
 	"description": "This extension remind you of the next yingyeothon schedule.",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.60.0"
 	},
