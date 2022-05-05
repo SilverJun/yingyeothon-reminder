@@ -2,7 +2,7 @@
 	"name": "yingyeothon-reminder",
 	"displayName": "yingyeothon-reminder",
 	"description": "This extension remind you of the next yingyeothon schedule.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
@@ -47,5 +47,7 @@
 	},
 	"repository": {
 		"url": "https://github.com/SilverJun/yingyeothon-reminder.git"
-	}
+	},
+	"publisher": "SilverJun",
+	"icon": "misc/logo.png"
 }
