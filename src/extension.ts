@@ -73,13 +73,13 @@ function showYYTMessage(context: vscode.ExtensionContext, yyt: YYTData) {
 
 	const now = Date.now();
 	const message = (now <= targetDate.getTime())
-		? `다음 잉여톤은 ${yyt.fileName} 입니다`
-		: `지난 잉여톤은 ${yyt.fileName} 이었습니다`;
+		? `다음 잉여톤은 ${yyt.fileName} 입니다 (${yyt.date.toISOString().slice(0, 10)})`
+		: `지난 잉여톤은 ${yyt.fileName} 이었습니다 (${yyt.date.toISOString().slice(0, 10)})`;
 
-	vscode.window.showInformationMessage(message, ...['잉여톤 사이트', '다음 잉여톤까지 그만보기', '닫기'])
+	vscode.window.showInformationMessage(message, ...['잉여톤 사이트로', '다음 잉여톤까지 그만보기', '닫기'])
 		.then((selection) => {
 			switch (selection) {
-				case '잉여톤 사이트':
+				case '잉여톤 사이트로':
 					vscode.env.openExternal(vscode.Uri.parse(yyt.yytWebUrl));
 					break;
 				case '다음 잉여톤까지 그만보기':
