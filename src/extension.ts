@@ -18,11 +18,13 @@ export function activate(context: vscode.ExtensionContext) {
 	const savedLastYYT: YYTData | undefined = context.globalState.get('LastYYT');
 
 	getLastYYT().then(lastYYT => {
-		if (savedLastYYT && savedLastYYT.date.getTime() === lastYYT.date.getTime()) {
-			return; // 알림을 띄우지 않고 리턴.
-		} else {
-			showYYTMessage(context, lastYYT);
+		if (savedLastYYT) {
+			savedLastYYT.date = new Date(savedLastYYT.date);
+			if (savedLastYYT.date.getTime() === lastYYT.date.getTime()) {
+				return; // 알림을 띄우지 않고 리턴.
+			}
 		}
+		showYYTMessage(context, lastYYT);
 	});
 
 	// The command has been defined in the package.json file
